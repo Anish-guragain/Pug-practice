@@ -4,4 +4,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  variants: {
+    display: ["responsive", "group-hover", "group-focus"],
+  },
 };

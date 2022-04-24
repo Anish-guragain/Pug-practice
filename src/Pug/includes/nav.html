@@ -1,5 +1,5 @@
 
-        <header>
+        <header  >
             <!-- Small screen Phone/location user-login -->
             <div class="info  space-x-8 flex flex-wrap justify-center md:hidden bg-yellow-100 ">
                <!--user-login  -->
@@ -27,7 +27,7 @@
             <nav  class="flex flex-wrap items-center justify-between  w-full py-4 md:py-0 md:px-52  text-sm text-gray-700 " >
                <!-- Logo -->
                <div>
-                 <a href="/src/html/home.html"> <img src="/src/html/img/logo.png" class="h-12 w-24 md:h-[5rem] md:w-[10rem]" alt=""> </a>
+                 <a href="/src/html/home.html"> <img src="img/logo.png" class="h-12 w-24 md:h-[5rem] md:w-[10rem]" alt=""> </a>
                </div>
                <!-- Hamburger Icon -->
                <svg
@@ -46,7 +46,7 @@
                      />
                </svg>
                <!--Navigation links -->
-               <div class="hidden  w-full md:flex md:items-center md:w-auto " id="menu">
+               <div class="hidden  w-full md:flex md:items-center md:w-auto  " id="menu">
                <div class="right">
                <!--  Phone/location user-login --> 
                <div class="up flex justify-end">
@@ -75,6 +75,7 @@
                      </div>
                   </div>
                </div>
+               
                <!-- Navigation links down bar -->
                <div class="down mt-2">
                <ul
@@ -85,76 +86,98 @@
                   md:justify-between
                   md:pt-0"
                   >
-                  <!-- Link 1 -->
-                  <div x-data="{ open: false }" @mouseleave="open = false" class="relative md:flex ">
-                    <!-- Dropdown toggle button -->
-                    <button @mouseover="open = true" class=" items-center block p-2 bg-white hover:text-green-600  ">
-                       <span class="mr-4">Popular Package</span>
-                       <svg class="w-6 h-1 text-white  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                       fill="currentColor">
-                       <path fill-rule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clip-rule="evenodd" />
-                       </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div x-show="open "
-                       x-transition:enter.duration.500ms
-                       x-transition:leave.duration.800ms
-                       class="absolute  w-55 py-1 mt-4 md:mt-10 bg-white z-50  rounded-md shadow-xl flex">
 
-                        <!-- For 2 or more column add div for each column and make above class flex -->
-
+                  <div class="relative group">
+                     <button class="items-center block p-2 bg-white hover:text-green-600">
+                         <span>First Dropdown</span>
+                     </button>
+                     <div class="absolute z-10 hidden    py-1   bg-white   rounded-md shadow-xl group-hover:block">
+                         
+                         <div class="px-2 pt-2  pb-4 w-52  shadow-lg">
+                           <div class="grid grid-cols-1 w-55 gap-4 md:grid-cols-2">
+                            
                        <div class="row ">
-                       <a href="#"
-                          class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                       Dropdown List 1
-                       </a>
-                       <a href="#"
-                          class="block px-4 py-2 text-sm   hover:text-green-600 ">
-                       Dropdown List 2
-                       </a>
-                       <a href="#"
-                          class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                       Dropdown List 3
-                       </a>
-                       <a href="#"
-                          class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                       Dropdown List 4
-                       </a>
-                       </div>
-
-                       <div class="row2  ">
                         <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 1
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm   hover:text-green-600 ">
-                     Dropdown List 2
-                     </a>
-                       </div>
+                           class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                        Dropdown List 1
+                        </a>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm   hover:text-green-600 ">
+                        Dropdown List 2
+                        </a>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                        Dropdown List 3
+                        </a>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                        Dropdown List 4
+                        </a>
+                        </div>
+ 
+                        <div class="row2  ">
+                         <a href="#"
+                         class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                      Dropdown List 1
+                      </a>
+                      <a href="#"
+                         class="block px-4 py-2 text-sm   hover:text-green-600 ">
+                      Dropdown List 2
+                      </a>
+                        </div>
+                           </div>
+                         </div>
+                     </div>
+                 </div>  
+                 
+               
+                  <!-- Link 1 -->
+                  <div class="relative group">
+                     <button class="items-center block p-2 bg-white hover:text-green-600">
+                         <span>First Dropdown</span>
+                     </button>
+                     <div class="absolute z-10 hidden    py-1   bg-white   rounded-md shadow-xl group-hover:block">
+                         
+                         <div class="px-2 pt-2  pb-4 w-52  shadow-lg">
+                           <div class="grid grid-cols-1 w-55 gap-4 md:grid-cols-2">
+                            
+                       <div class="row ">
+                        <a href="#"
+                           class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                        Dropdown List 1
+                        </a>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm   hover:text-green-600 ">
+                        Dropdown List 2
+                        </a>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                        Dropdown List 3
+                        </a>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                        Dropdown List 4
+                        </a>
+                        </div>
+ 
+                      
+                           </div>
+                         </div>
+                     </div>
+                 </div> 
 
-                    </div>
-                  <!-- link 2 -->
-                  <div x-data="{ open: false }" @mouseleave="open = false" class="relative md:flex ">
-                  <!-- Dropdown toggle button -->
-                  <button @mouseover="open = true" class=" items-center block p-2 bg-white hover:text-green-600  ">
-                     <span class="mr-4">Risk</span>
-                     <svg class="w-6 h-1 text-white  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                     fill="currentColor">
-                     <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                     </svg>
+                 <!-- Link 3 -->
+
+                 <div class="relative group">
+                  <button class="items-center block p-2 bg-white hover:text-green-600">
+                      <span>First Dropdown</span>
                   </button>
-                  <!-- Dropdown menu -->
-                  <div x-show="open "
-                     x-transition:enter.duration.500ms
-                     x-transition:leave.duration.800ms
-                     class="absolute  w-48 py-1 mt-4 md:mt-10 bg-white z-50  rounded-md shadow-xl">
-
-                      <!-- For 2 or more column add div for each column and make above class flex -->
+                  <div class="absolute z-10 hidden    py-1   bg-white   rounded-md shadow-xl group-hover:block">
+                      
+                      <div class="px-2 pt-2  pb-4 w-52  shadow-lg">
+                        <div class="grid grid-cols-1 w-55 gap-4 md:grid-cols-2">
+                         
+                    <div class="row ">
                      <a href="#"
                         class="block px-4 py-2 text-sm    hover:text-green-600 ">
                      Dropdown List 1
@@ -171,156 +194,88 @@
                         class="block px-4 py-2 text-sm    hover:text-green-600 ">
                      Dropdown List 4
                      </a>
+                     </div>
+
+                   
+                        </div>
+                      </div>
                   </div>
-                  <!-- link 3 -->
-                  <div x-data="{ open: false }" @mouseleave="open = false" class="relative md:flex ">
-                  <!-- Dropdown toggle button -->
-                  <button @mouseover="open = true" class=" items-center block p-2 bg-white hover:text-green-600  ">
-                     <span class="mr-4">Habit</span>
-                     <svg class="w-6 h-1 text-white  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                     fill="currentColor">
-                     <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                     </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div x-show="open "
-                     x-transition:enter.duration.500ms
-                     x-transition:leave.duration.800ms
-                     class="absolute  w-48 py-1 mt-4 md:mt-10 bg-white z-50  rounded-md shadow-xl">
+              </div> 
 
-                      <!-- For 2 or more column add div for each column and make above class flex -->
+              <!-- Link 4 -->
 
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 1
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm   hover:text-green-600 ">
-                     Dropdown List 2
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 3
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 4
-                     </a>
+              <div class="relative group">
+               <button class="items-center block p-2 bg-white hover:text-green-600">
+                   <span>First Dropdown</span>
+               </button>
+               <div class="absolute z-10 hidden    py-1   bg-white   rounded-md shadow-xl group-hover:block">
+                   
+                   <div class="px-2 pt-2  pb-4 w-52 shadow-lg">
+                     <div class="grid grid-cols-1 w-55 gap-4 md:grid-cols-2">
+                      
+                 <div class="row ">
+                  <a href="#"
+                     class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                  Dropdown List 1
+                  </a>
+                  <a href="#"
+                     class="block px-4 py-2 text-sm   hover:text-green-600 ">
+                  Dropdown List 2
+                  </a>
+                  <a href="#"
+                     class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                  Dropdown List 3
+                  </a>
+                  <a href="#"
+                     class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                  Dropdown List 4
+                  </a>
                   </div>
-                  <!-- link 4 -->
-                  <div x-data="{ open: false }" @mouseleave="open = false" class="relative md:flex ">
-                  <!-- Dropdown toggle button -->
-                  <button @mouseover="open = true" class=" items-center block p-2 bg-white hover:text-green-600  ">
-                     <span class="mr-4">Healthans Scans</span>
-                     <svg class="w-6 h-1 text-white  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                     fill="currentColor">
-                     <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                     </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div x-show="open "
-                     x-transition:enter.duration.500ms
-                     x-transition:leave.duration.800ms
-                     class="absolute  w-48 py-1 mt-4 md:mt-10 bg-white z-50  rounded-md shadow-xl">
 
-                      <!-- For 2 or more column add div for each column and make above class flex -->
+                
+                     </div>
+                   </div>
+               </div>
+           </div> 
 
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 1
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm   hover:text-green-600 ">
-                     Dropdown List 2
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 3
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 4
-                     </a>
+             <!-- Link 5 -->
+             <div class="relative group">
+               <button class="items-center block p-2 bg-white hover:text-green-600">
+                   <span>First Dropdown</span>
+               </button>
+               <div class="absolute z-10 hidden    py-1   bg-white   rounded-md shadow-xl group-hover:block">
+                   
+                   <div class="px-2 pt-2  pb-4 w-52  shadow-lg">
+                     <div class="grid grid-cols-1 w-55 gap-4 md:grid-cols-2">
+                      
+                 <div class="row ">
+                  <a href="#"
+                     class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                  Dropdown List 1
+                  </a>
+                  <a href="#"
+                     class="block px-4 py-2 text-sm   hover:text-green-600 ">
+                  Dropdown List 2
+                  </a>
+                  <a href="#"
+                     class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                  Dropdown List 3
+                  </a>
+                  <a href="#"
+                     class="block px-4 py-2 text-sm    hover:text-green-600 ">
+                  Dropdown List 4
+                  </a>
                   </div>
-                  <!-- link 5 -->
-                  <div x-data="{ open: false }" @mouseleave="open = false" class="relative md:flex ">
-                  <!-- Dropdown toggle button -->
-                  <button @mouseover="open = true" class=" items-center block p-2 bg-white hover:text-green-600  ">
-                     <span class="mr-4">Herbved</span>
-                     <svg class="w-6 h-1 text-white  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                     fill="currentColor">
-                     <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                     </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div x-show="open "
-                     x-transition:enter.duration.500ms
-                     x-transition:leave.duration.800ms
-                     class="absolute  w-48 py-1 mt-4 md:mt-10 bg-white z-50  rounded-md shadow-xl">
 
-                      <!-- For 2 or more column add div for each column and make above class flex -->
+                
+                     </div>
+                   </div>
+               </div>
+           </div> 
+                  
 
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 1
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm   hover:text-green-600 ">
-                     Dropdown List 2
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 3
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 4
-                     </a>
-                  </div>
-                  <!-- link 6 -->
-                  <div x-data="{ open: false }" @mouseleave="open = false" class="relative md:flex ">
-                  <!-- Dropdown toggle button -->
-                  <button @mouseover="open = true" class=" items-center block p-2 bg-white hover:text-green-600  ">
-                     <span class="mr-4">Surgery</span>
-                     <svg class="w-6 h-1 text-white  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                     fill="currentColor">
-                     <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                     </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div x-show="open "
-                     x-transition:enter.duration.500ms
-                     x-transition:leave.duration.800ms
-                     class="absolute  w-48 py-1 mt-4 md:mt-10 bg-white z-50  rounded-md shadow-xl">
-
-                      <!-- For 2 or more column add div for each column and make above class flex -->
-
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 1
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm   hover:text-green-600 ">
-                     Dropdown List 2
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm    hover:text-green-600 ">
-                     Dropdown List 3
-                     </a>
-                     <a href="#"
-                        class="block px-4 py-2 text-sm   hover:text-green-600 ">
-                     Dropdown List 4
-                     </a>
-                  </div>
-                  <!-- link 7 -->
+                  
+               
                   
                     
                      <button class=" items-center block p-2 bg-white hover:text-green-600  ">
@@ -335,7 +290,13 @@
                    
                </ul>
                </div>
+            </div>
+
+               </div>
+            
             </nav>
+         
+     
          </header>
 
 
@@ -358,6 +319,7 @@
               menu.classList.toggle("hidden");
             });
          </script>
+          
          <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
          <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
