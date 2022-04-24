@@ -1,60 +1,47 @@
-         <!-- Slider main container -->
-         <div class="swiper flex h-[10rem] md:h-[30rem] ">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper"
-               <!-- Slides --
-               <div class="swiper-slide"> <img class="object-center object-fill w-full h-full  " src="img/20.jpg" alt=""> </div>
-               <div class="swiper-slide"> <img class="object-center object-fill w-full h-full  "  src="img/30.webp" alt=""></div>
-               <div class="swiper-slide"><img  class="object-center object-fill w-full h-full  "  src="img/20.jpg" alt=""></div>
-            </div>
-            <!--navigation buttons -->
-            <div class="swiper-button-prev   bg-orange-700 rounded-full md:h-[2rem] md:w-[2rem]  h-4 w-4 overflow-hidden   text-white text-xs  " > </div>
-            <div class="swiper-button-next   bg-orange-700 rounded-full md:h-[2rem] md:w-[2rem]  h-4 w-4 overflow-hidden   text-white text-xs "></div>
-         </div>
+ <!-- Slider main container -->
+ <div class="swiper flex h-[10rem] md:h-[30rem] ">
+   <!-- Additional required wrapper -->
+         <div class="swiper-wrapper" <!-- Slides -- <div class="swiper-slide"> <img class="object-center object-fill w-full h-full  " src="img/20.jpg" alt=""> </div>
+         <div class="swiper-slide"><img class="object-center object-fill w-full h-full  " src="img/30.webp" alt=""></div>
+         <div class="swiper-slide"><img class="object-center object-fill w-full h-full  " src="img/20.jpg" alt=""></div>
 
-         <!-- search function -->
-         
-          <!-- create search barr -->
-          <div class="flex justify-center ">
-            <div class="mb-2 mt-4  sm:flex justify-center w-[50%] ">
-              <div class="input-group flex flex-wrap items-stretch  w-full  mb-2 " >
-                <input type="search" class="form-control  h-[2.5rem] relative flex-auto min-w-0 block  px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded sm:rounded-l-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white shadow-2xl focus:outline-none" placeholder="Find you package" aria-label="Search" aria-describedby="button-addon3">
-               
-              </div>
-              <div class=" flex flex-wrap  justify-center  mb-4   " >
-              <button class="btn flex h-[2.5rem] w-[6rem] px-6 py-2 border-2  text-white bg-green-600 hover:bg-white hover:text-green-600 hover:border-green-600 font-medium text-xs leading-tight uppercase rounded sm:rounded-r-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="button" id="button-addon3   ">Search</button>
-            </div>
-         </div>
-          
+      <!--navigation buttons -->
+      <div class="swiper-button-prev   bg-orange-700 rounded-full md:h-[2rem] md:w-[2rem]  h-4 w-4 overflow-hidden   text-white text-xs  "> </div>
+      <div class="swiper-button-next   bg-orange-700 rounded-full md:h-[2rem] md:w-[2rem]  h-4 w-4 overflow-hidden   text-white text-xs "></div>
+</div>
 
-          </div>
-      
+<!-- search function -->
+
+<!-- create search barr -->
+<div class="flex justify-center ">
+   <div class="mb-2 mt-4  sm:flex justify-center w-[50%] ">
+       <div class="input-group flex flex-wrap items-stretch  w-full  mb-2 ">
+           <input type="search" class="form-control  h-[2.5rem] relative flex-auto min-w-0 block  px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded sm:rounded-l-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white shadow-2xl focus:outline-none" placeholder="Find you package" aria-label="Search" aria-describedby="button-addon3">
+       </div>
+
+       <div class=" flex flex-wrap  justify-center  mb-4   ">
+           <button class="btn flex h-[2.5rem] w-[6rem] px-6 py-2 border-2  text-white bg-green-600 hover:bg-white hover:text-green-600 hover:border-green-600 font-medium text-xs leading-tight uppercase rounded sm:rounded-r-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="button" id="button-addon3   ">Search</button>
+       </div>
+   </div>
+</div>
 
 
-
-        
-
-
-
-  
-
-         <!-- Slider code -->
-         <script>
-            const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            speed:400,
-            spacebetween: 100,
-            loop: true,
-            autoplay: {
-               delay: 3000,
-               disableOnInteraction: false,
-            },
-    
-            // Navigation arrows
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            },    
-            });
-         </script>
-         
+<!-- Slider code -->
+<script>
+   const swiper = new Swiper('.swiper', {
+   // Optional parameters
+   speed:400,
+   spacebetween: 100,
+   loop: true,
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+   },
+       
+   // Navigation arrows
+   navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+   },    
+   });
+</script>
